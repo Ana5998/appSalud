@@ -1,0 +1,22 @@
+{
+  "name": "appsalud",
+  "version": "1.0.0",
+  "description": "Automatizacion pruebas software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "mocha",
+    "chai",
+    "pruebas",
+    "appSalud"
+  ],
+  "author": "Ana Arroyo Quiles",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
