@@ -71,15 +71,31 @@ class bascula {
 
     describirIMC(imc){
 
-        let texto;
+        let texto="";
 
         if(imc<16)
-            texto="Infrapeso (delgadez severa)";
+            texto="<16.00: Infrapeso (delgadez severa)";
         
         if(imc==16 && imc==17)
-            texto="Infrapeso (delgadez moderada";
+            texto="16.00 – 16.99: Infrapeso (delgadez moderada)";
+            
+        if(imc==17 && imc==18.5)
+            texto="17.00 - 18.49: Infrapeso (delgadez aceptable)";   
         
+        if(imc==18.5 && imc==25)
+            texto="18.50 - 24.99: Peso normal";
         
+        if(imc==25 && imc==30)
+            texto="25.00 - 29.99: Sobrepeso";
+
+        if(imc==30 && imc==35)
+            texto="30.00 - 34.99: Obeso (Tipo I)";
+
+        if(imc==35 && imc==40)
+            texto="35.00 - 40.00: Obeso (Tipo II)";
+
+        if(imc>40)
+            texto=">40.00: Obeso (Tipo III)";
         
 
     }
