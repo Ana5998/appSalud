@@ -1,5 +1,5 @@
 {
-  "name": "appsalud",
+  "name": "appsaludvinculada",
   "version": "1.0.0",
   "description": "Automatizacion pruebas software",
   "main": "index.js",
@@ -18,5 +18,17 @@
   "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^10.2.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ana5998/appSalud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ana5998/appSalud/issues"
+  },
+  "homepage": "https://github.com/Ana5998/appSalud#readme"
 }
