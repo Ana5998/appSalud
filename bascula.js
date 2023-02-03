@@ -20,13 +20,12 @@ class bascula {
 
     }
 
-    anotarPeso(peso,altura,fecha) {
+    anotarPeso(peso,altura,fecha=new Date()) {
 
         this.pesos.push(peso);
         this.alturas.push(altura);
         this.fechas.push(fecha);
-
-        anotaciones++;
+        this.anotaciones++;
 
     }
 
@@ -103,3 +102,5 @@ class bascula {
 
 
 }
+
+module.exports=Bascula;

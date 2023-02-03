@@ -1,3 +1,5 @@
+require('./bascula.js');
+
 class paciente{
     
     nombre=null;
@@ -10,6 +12,7 @@ class paciente{
         this.nombre=n;
         this.apellido=a;
         this.fecha=f;
+        this.bascula=null;
 
     }
 
@@ -74,9 +77,18 @@ class paciente{
     }
 
     calcularIMC() {
+        
+        if(this.bascula==null)
 
+        return -1;
+
+        else
+        
+        return this.bascula.calcularIMC();
 
 
     }
 
 }
+
+module.exports=Paciente;
